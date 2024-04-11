@@ -11,7 +11,10 @@ This Project is there to get myself comfortable in handling systemd-Services.
 
 In Order to install Librespot you need to provide the Dependencies.  
 Those dependencies are split up into, those you need for building the Project and those you need to install rust.
-After the dependencies are all met, you can install librespot
+After the dependencies are all met, you can install librespot.
+
+In my case I used a Raspberry Pi. In theory you can use every platform that supports rust.
+Got it working on a Apple eMac (ppc G4).
 
 ### Dependencies
 
@@ -36,4 +39,4 @@ root@raspi:~# curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 1. Paste `librespot.service`-file into `/etc/systemd/system/` (It should result into `/etc/systemd/system/librespot.service`)
 2. Enable the Service with `systemctl enable librespot`
 3. Start Service with `systemctl start librespot`
-4. 
+4. Try to use it
